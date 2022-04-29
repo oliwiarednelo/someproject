@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SoMe purpose</title>
+</head>
+
+<body>
+    <section id="landing-page">
+        <header>
+            <nav>
+                    <a href="index.html" class="logo">SoMe</a>
+                <ul>
+                    
+                    <li><a href="purpose.html">Purpose</a></li>
+                    <li><a href="thumbnails.html">Posts</a></li>
+                    <li><a href="calendar.html">Content calendar</a></li>
+                    <li><a href="more.html">More</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <div class="back-button">
+       <a href="thumbnails.html">Back</a>
+    </div>
+    <div class="whole-post">
+        <div class="slideshowcontainervid">
+            <div class="myslides">
+                <div class="numbertext">1 / 2</div>
+                <div class="pozafacebook" >
+                <img  src="assets/facebook2 full.png" >
+               </div>
+                <div class="text">1/2</div>
+              </div>
+            
+              <div class="myslides">
+                <div class="numbertext">2 / 2</div>
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/VU5CNdwLdNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="text">2/2</div>
+              </div>
+            
+             
+            
+              <!-- Next and previous buttons -->
+              <a class="prevvid" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="nextvid" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+
+            </div>
+        </div>
+
+
+        
+    </div>
+</div>
+
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("myslides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+    
+</body>
+</html>

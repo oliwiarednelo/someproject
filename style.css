@@ -1,0 +1,837 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+    background-color: #05142A;
+    
+    margin-left:5%;
+    margin-right: 5%;
+
+
+}
+.hero-section {
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #05142A;
+  position: relative;
+
+}
+.hero-section h1{
+  color: #2a85ee;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 0;
+  position: absolute;
+  top:120px;
+ 
+  
+}
+.hero-section p{
+  color: #fafafa;
+  font-size: 25px;
+
+  z-index: 1;
+  position: absolute;
+  top: 300px;
+  
+
+}
+
+header{
+    transition: 0.6s;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10vh;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background-color: #05142A;
+    z-index: 2;
+    
+}
+header .logo{
+  
+    height: 80px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: 0.6s;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+
+header ul{
+    list-style: none;
+    float: right;
+    margin: 10px;
+    display: flex;
+}
+
+header ul li a{
+    color: white;
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 16px;   
+}
+header ul li a:hover{
+    color: #2a85ee;
+}
+
+
+.cards{
+    width: 100%;
+    height: 50vh;
+margin-left: auto;
+margin-right: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #05142A;
+    position: relative;
+}
+.card1{
+    background-color:#2a85ee;
+    width: 22%;
+    height: 20vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card1 h3{
+    color: white;
+    font-size: 30px;
+}
+.card1 h3:hover{
+    color: #05142A;
+}
+.card2{
+    background-color:#2a85ee;
+    width: 22%;
+    height: 20vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2 h3{
+    color: white;
+    font-size: 30px;
+}
+.card2 h3:hover{
+    color: #05142A;
+}
+.card3{
+    background-color:#2a85ee;
+    width: 22%;
+    height: 20vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card3 h3{
+    color: white;
+    font-size: 30px;
+}
+.card3 h3:hover{
+    color: #05142A;
+}
+.card4{
+    background-color:#2a85ee;
+    width: 22%;
+    height: 20vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card4 h3{
+    color: white;
+    font-size: 30px;
+}
+.card4 h3:hover{
+    color: #05142A;
+}
+.cards a{
+    text-decoration: none;
+} 
+.main-purpose{
+   
+    height: 400vh;
+    background-color: #05142A;
+}
+.main-purpose h1{
+    color: white;
+    font-size: 35px;
+    z-index: 0;
+    position: absolute;
+    top:100px;
+    left: 5%;
+}
+.main-purpose p{
+    color: #2a85ee;
+    font-size: 20px;
+    z-index: 0;
+    position: absolute;
+    top:150px;
+    left: 5%;
+
+}
+
+.main-post{
+   
+    height: 250vh;
+    background-color: #05142A;
+}
+.main-post h1{
+    color: #2a85ee;
+    font-size: 50px;
+    z-index: 0;
+    position: absolute;
+    top:100px;
+    
+}
+
+.instagram h1{
+    color: white;
+    font-size: 25px;
+    z-index: 0;
+    position: absolute;
+    top:200px;
+    left: 5%;
+    
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+position: relative;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.slideshow-containerr {
+position: relative;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.slideshow-containerr img {
+margin-right: 100px;
+
+}
+
+
+
+
+
+.mySlides img{
+    margin-top: 260px;
+    width: 250px;
+ 
+    border: 5px solid white;
+}
+.mySlides img:hover{
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 50px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.facebook h1{
+    color: white;
+    font-size: 25px;
+    z-index: 0;
+    bottom: 0;
+    top:630px;
+    left: 5%;
+    position:absolute;
+}
+
+.fbSlides {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fbSlides img{
+    /* margin-top: 180px;
+    width: 300px;
+
+    border: 3px solid white; */
+    margin-top: 150px;
+  width: 250px;
+
+  border: 5px solid white;
+}
+
+.fbSlides img:hover{
+  opacity: 50%;
+}
+
+
+
+.tiktok h1{
+    color: white;
+    font-size: 25px;
+    z-index: 0;
+    bottom: 0;
+    top:1100px;
+    left: 5%;
+    position:absolute;
+}
+
+/* .ttSlides img{
+    margin-top: 160px;
+    width: 300px;
+  
+    border: 3px solid white;
+} */
+
+  
+
+ 
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 50px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+
+}
+  
+ 
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .whole-post{
+   
+    height: 100vh;
+    background-color: #05142A;
+}
+
+.back-button {
+    position: absolute;
+    top: 70px;
+left: 6%;
+}
+.back-button a{
+  text-decoration: none;
+color: #fafafa;
+
+}
+
+.slideshowcontainer {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+ 
+  .myslides img{
+      margin-top: 60px;
+      width: 500px;
+      height: 500px;
+      border: 3px solid white;
+  }
+
+
+.fbslidefull img{
+
+  margin-top: 60px;
+  width: 600px;
+
+  border: 3px solid white;
+
+  
+}
+.pozafacebook img{
+  height: 500px;
+  width: 900px;
+
+}
+
+.maincalendar{
+  width: 100%;
+   height: 100vh;
+   background-color: #05142A;
+}
+.maincalendar h1{
+   color: #2a85ee;
+    font-size: 50px;
+    z-index: 0;
+    position: absolute;
+    top:100px;
+   
+}
+
+.ctext {
+   color: white;
+   top:150px;
+   position: absolute;
+
+}
+.ctext p{
+   font-size: 16px;
+   margin-top: 20px;
+   margin-right: 6%;
+}
+.calendar img{
+ display: flex;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.mainmore{
+   width: 100%;
+   height: 100vh;
+   background-color: #05142A;
+}
+.toneofvoice{
+   width: 100%;
+   height: 100vh;
+   background-color: #05142A;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   background-size: 100% 100%;
+   z-index: -999;
+}
+.leftside{
+   flex-direction: column;
+   display: flex;
+
+   /* justify-content: center; */
+   /* align-items: center; */
+}
+.leftside h1{
+   color: #2a85ee;
+   font-size: 35px;
+   margin-top: 100px;
+   z-index: 2;
+
+}
+.leftside p{
+   color: white;
+   font-size: 20px;
+   position: absolute;
+   left: 6%;
+   margin-top: 200px;
+}
+.paragr2 p{
+   color: white;
+   font-size: 20px;
+   position: absolute;
+   left: 6%;
+   margin-top: 300px;
+}
+
+.rightside img{
+
+   height: 90vh;
+ 
+   margin-left: 100px;
+ 
+}
+
+.rightside {
+width: 50%;
+
+}
+.seo{
+   width: 100%;
+   height: 100vh;
+   background-color: #05142A;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   background-size: 100% 100%;
+   z-index: -999;
+}
+
+.rightside1 img{
+   top: 400px;
+   width: 100%;
+   height: 90vh;
+   flex-direction: row;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-purpose{
+ 
+height: 140vh;
+background-color: #05142A;
+}
+.main-purpose h1{
+color: #2a85ee;
+font-size: 35px;
+z-index: 0;
+position: absolute;
+top:100px;
+left: 6%;
+right: 6%;
+}
+.main-purpose p{
+color: white;
+font-size: 20px;
+z-index: 0;
+position: absolute;
+top:150px;
+left: 6%;
+right: 6%;
+
+}
+.strategic-considerations h1{
+color: #2a85ee;
+font-size: 35px;
+z-index: 0;
+position: absolute;
+top:390px;
+left: 6%;
+}
+.someplatforms h2{
+  color: #2a85ee;
+  font-size: 25px;
+  z-index: 0;
+  position: absolute;
+  top:225px;
+  left: 6%;
+  }
+
+.someplatforms p{
+  color: white;
+  font-size: 20px;
+  z-index: 0;
+  position: absolute;
+  top:260px;
+  left: 6%;
+  }
+.question1 h2{
+color: #2a85ee;
+font-size: 25px;
+z-index: 0;
+position: absolute;
+top:450px;
+left: 6%;
+}
+.question1 p{
+color: white;
+font-size: 20px;
+z-index: 0;
+position: absolute;
+top:490px;
+left: 6%;
+}
+
+.question2 h2{
+color: #2a85ee;
+font-size: 25px;
+z-index: 0;
+position: absolute;
+top:650px;
+left: 6%;
+}
+.question2 p{
+color: white;
+font-size: 20px;
+z-index: 0;
+position: absolute;
+top:690px;
+left: 6%;
+}
+
+.question3 h2{
+color: #2a85ee;
+font-size: 25px;
+z-index: 0;
+position: absolute;
+top:770px;
+left: 6%;
+}
+.question3 p{
+color: white;
+font-size: 20px;
+z-index: 0;
+position: absolute;
+top:813px;
+left: 6%;
+}
+
+.slideshowcontainervid {
+width: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.prevvid, .nextvid {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  margin-top: 50px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left: -50px;
+  margin-right: -300px;
+}
+
+.nextvid {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevvid:hover, .nextvid:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.tiktok1 video{
+  margin-top: 150px;
+  width: 250px;
+  height: 500px;
+}
+
+.myslides {
+  margin-top: 20px;
+}
+
+.facebook h1{
+  position: absolute;
+}
+
+.prevfb, .nextfb {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  margin-top: 50px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-left: -50px;
+  margin-right: -60px;
+}
+
+.nextfb {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevfb:hover, .nextfb:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fbslidefull  {
+margin-top: 50px;
+}
+
+.whole-info{
+   
+  height: 350vh;
+  background-color: #05142A;
+}
+
+.overview img{
+  margin-top: 50px;
+  height: 500px;
+  width: 800px;
+ 
+}
+.overview{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.seo img {
+  border: 2px #fafafa solid;
+}
+
+.toneofvoice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.style-tile img{
+  margin-top: 50px;
+  height: 600px;
+  width: 900px;
+  border: 2px #fafafa solid;
+ 
+}
+.style-tile{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
